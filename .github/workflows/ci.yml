@@ -24,7 +24,7 @@ jobs:
 
     - name: Run Semgrep
       run: |
-        semgrep --config=p/r2c/python-all config --lang=python .
-
+          semgrep --config=p/r2c/python-all --lang=python .
+      
     - name: Print Semgrep results
       run: cat semgrep_results.json
